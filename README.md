@@ -4,4 +4,19 @@ This is based on the original [example-voting-app](https://github.com/dockersamp
 
 modified to work on Kubernetes
 
+## Pre-requisites
+Install minikube and kubectl
+
+## To create pods and services
+kubectl apply -f .
+
+## To access result-service
+minikube service result-service --url
+
+## To access voting-service
+minikube service voting-service --url
+
+## To delete pods and services
+kubectl delete -f .
+
 
